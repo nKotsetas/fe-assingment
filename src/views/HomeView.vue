@@ -8,7 +8,7 @@
     <div v-else class="skeleton-container">
       <SkeletonLoader type="temperature" />
       <SkeletonLoader type="cards" />
-      <SkeletonLoader fullHeight type="chart" />
+      <SkeletonLoader type="chart" />
     </div>
   </div>
 </template>
@@ -44,8 +44,8 @@ const { loading } = storeToRefs(weatherStore);
     display: flex;
     flex-direction: column;
     gap: 15px;
-    height: 1024px;
   }
+
   .card-container {
     overflow: scroll;
     max-width: 60vw;
